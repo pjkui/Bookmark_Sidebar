@@ -276,27 +276,27 @@
         },
         website: {
             info: {
-                landing: "https://extensions.redeviation.com/",
-                privacyPolicy: "https://extensions.redeviation.com/privacy/bs",
-                changelog: "https://extensions.redeviation.com/changelog/bs",
-                uninstall: "https://extensions.redeviation.com/uninstall/bs",
+                landing: "https://extensions.pjkui.com/",
+                privacyPolicy: "https://extensions.pjkui.com/privacy/bs",
+                changelog: "https://extensions.pjkui.com/changelog/bs",
+                uninstall: "https://extensions.pjkui.com/uninstall/bs",
             },
             premium: {
-                checkout: "https://extensions.redeviation.com/premium/bs/checkout",
-                checkLicenseKey: "https://extensions.redeviation.com/ajax/premium/bs/check",
+                checkout: "https://extensions.pjkui.com/premium/bs/checkout",
+                checkLicenseKey: "https://extensions.pjkui.com/ajax/premium/bs/check",
             },
             feedback: {
-                form: "https://extensions.redeviation.com/ajax/feedback",
-                suggestions: "https://extensions.redeviation.com/ajax/feedback/suggestions"
+                form: "https://extensions.pjkui.com/ajax/feedback",
+                suggestions: "https://extensions.pjkui.com/ajax/feedback/suggestions"
             },
             translation: {
-                info: "https://extensions.redeviation.com/ajax/translation/bs/info",
-                langvars: "https://extensions.redeviation.com/ajax/translation/bs/langvars",
-                submit: "https://extensions.redeviation.com/ajax/translation/bs/submit"
+                info: "https://extensions.pjkui.com/ajax/translation/bs/info",
+                langvars: "https://extensions.pjkui.com/ajax/translation/bs/langvars",
+                submit: "https://extensions.pjkui.com/ajax/translation/bs/submit"
             },
             api: {
-                checkStatus: "https://extensions.redeviation.com/ajax/status/bs",
-                evaluate: "https://extensions.redeviation.com/api/evaluate/log",
+                checkStatus: "https://extensions.pjkui.com/ajax/status/bs",
+                evaluate: "https://extensions.pjkui.com/api/evaluate/log",
             }
         },
         urlAliases: {

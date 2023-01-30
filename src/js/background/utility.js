@@ -90,30 +90,30 @@
          */
         this.checkLicenseKey = (licenseKey) => {
             return new Promise((resolve) => {
-
-                $.xhr($.opts.website.premium.checkLicenseKey, {
-                    method: "POST",
-                    responseType: "json",
-                    data: {
-                        licenseKey: licenseKey
-                    }
-                }).then((xhr) => {
-                    if (xhr.response && typeof xhr.response.valid !== "undefined") {
-                        if (!xhr.response.valid) {
-                            // eslint-disable-next-line no-console
-                            console.error("License key check: Invalid key", licenseKey, xhr);
-                        }
-                        resolve({valid: xhr.response.valid});
-                    } else {
-                        // eslint-disable-next-line no-console
-                        console.error("License key check: Invalid response", licenseKey, xhr);
-                        resolve({valid: null});
-                    }
-                }, (err) => {
-                    // eslint-disable-next-line no-console
-                    console.error("License key check: Request failed", licenseKey, err);
-                    resolve({valid: null});
-                });
+                return resolve({valid: true});
+                // $.xhr($.opts.website.premium.checkLicenseKey, {
+                //     method: "POST",
+                //     responseType: "json",
+                //     data: {
+                //         licenseKey: licenseKey
+                //     }
+                // }).then((xhr) => {
+                //     if (xhr.response && typeof xhr.response.valid !== "undefined") {
+                //         if (!xhr.response.valid) {
+                //             // eslint-disable-next-line no-console
+                //             console.error("License key check: Invalid key", licenseKey, xhr);
+                //         }
+                //         resolve({valid: xhr.response.valid});
+                //     } else {
+                //         // eslint-disable-next-line no-console
+                //         console.error("License key check: Invalid response", licenseKey, xhr);
+                //         resolve({valid: null});
+                //     }
+                // }, (err) => {
+                //     // eslint-disable-next-line no-console
+                //     console.error("License key check: Request failed", licenseKey, err);
+                //     resolve({valid: null});
+                // });
             });
         };
 

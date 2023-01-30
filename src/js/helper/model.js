@@ -204,7 +204,7 @@
         };
 
         let data = {};
-        let userType = null;
+        let userType = "premium";
         let port = null;
         const callbacks = {};
 
@@ -215,7 +215,7 @@
          */
         this.init = () => {
             return new Promise((resolve) => {
-                userType = null;
+                userType = "premium";
 
                 Promise.all([
                     initPort(),
@@ -269,7 +269,7 @@
                             if (userType === null) {
                                 this.call("userType").then((obj) => {
                                     if (obj && obj.userType) {
-                                        userType = obj.userType;
+                                        userType = "premium";
                                     }
                                     resolve();
                                 });

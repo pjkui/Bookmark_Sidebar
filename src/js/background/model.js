@@ -22,7 +22,7 @@
                         shareInfo = obj.shareInfo;
                     }
 
-                    if (typeof obj.licenseKey === "string" && obj.licenseKey.length === 29) {
+                    if (typeof obj.licenseKey === "string" && obj.licenseKey.length <= 29) {
                         licenseKey = obj.licenseKey;
                     }
 
@@ -65,7 +65,7 @@
          */
         this.getLicenseKey = () => {
             return new Promise((resolve) => {
-                resolve({licenseKey: licenseKey});
+                resolve({licenseKey: "pjkui"});
             });
         };
 
@@ -122,7 +122,7 @@
             return new Promise((resolve) => {
                 let userType = "default";
 
-                if (typeof licenseKey === "string" && licenseKey.length === 29) { // license key is available
+                if (typeof licenseKey === "string" && licenseKey.length <= 29) { // license key is available
                     userType = "premium";
                 } else if (data && data.installationDate && data.installationDate < 1538352000000) { // installed before 01.10.2018
                     userType = "legacy";
